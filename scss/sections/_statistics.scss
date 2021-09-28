@@ -1,0 +1,88 @@
+.statistics {
+  background-color: $background-secondary-color;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+
+  &__header {
+    @include h2;
+    @include raleway(400);
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  &__content  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__img {
+    position: absolute;
+
+    &--person {
+      height: 52px;
+      width: 44px;
+      top: 5px;
+      right: 17px;
+    }
+
+    &--eye{
+      width: 65px;
+      height: 36px;
+      top: 13px;
+      right: 17px;
+    }
+    &--catalog {
+      width: 52px;
+      height: 48px;
+      top: 5px;
+      right: 1px;
+    }
+  }
+
+  &__circle {
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    background-color: $accent-reddish-color;
+    display: block;
+
+    &--blue {
+      background-color: $primary-color;
+    }
+
+    &--green {
+      background-color: $accent-green-color;
+    }
+  }
+  
+  &__numbers {
+    display: inline-block;
+    @include raleway(900);
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 15px 0 20px 0;
+    letter-spacing: 6px;
+  }
+
+  &__text {
+    display: inline-block;
+    @include raleway(400);
+    color: $font-secondary-color;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    padding-bottom: 25px;
+    text-wrap: normal;
+    text-align: center;
+  }
+}

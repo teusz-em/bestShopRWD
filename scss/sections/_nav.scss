@@ -1,0 +1,70 @@
+.nav {
+  &__checkbox {
+    position: absolute;
+    display: none;
+    opacity: 0;
+
+    &:checked ~ .nav__list {
+      max-height: 400px;
+    }
+
+    &:checked ~ .nav__button .fa-times{
+      display: block;
+      font-size: 3rem;
+
+    }
+    &:checked ~ .nav__button .fa-bars{
+      display: none;
+    }
+  }
+
+  &__button {
+    font-size: 3rem;
+    color: #08A6E4 ;
+    background-color: transparent;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+      .fa-times {
+        display: none;
+      }
+  }
+
+  &__list {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    background-color: $background-secondary-color;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px;
+  }
+
+  &__span {
+    padding: 40px 20px;
+  }
+
+
+
+  &__link {
+    @include opensans(800);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $font-secondary-color;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 14px;
+
+
+    &:hover {
+      color: $font-primary-color;
+
+    }
+  }
+}
+

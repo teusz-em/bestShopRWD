@@ -1,0 +1,12 @@
+.header {
+  width: 100%;
+  background-color: $background-color;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-secondary-color;
+    height: 70px;
+  }
+}

@@ -1,0 +1,22 @@
+
+@mixin raleway($weight) {
+  font-family: "Raleway", sans-serif;
+  font-weight: ($weight);
+}
+
+@mixin opensans($weight) {
+  font-family: "Open Sans", sans-serif;
+  font-weight: ($weight);
+}
+
+@mixin  h2 {
+  font-size: 3rem;
+  line-height: 35px;
+
+}
+
+@mixin p {
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: $font-primary-color;
+}
