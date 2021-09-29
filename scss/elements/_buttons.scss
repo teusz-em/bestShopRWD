@@ -1,10 +1,14 @@
 .btn {
+  @include opensans(800);
   font-size: 1.3rem;
   line-height: 1.8rem;
   text-decoration: none;
   border-radius: 23px;
   padding: 16px 57px;
   display: block;
+  background-color: $accent-reddish-color;
+  color: #FFFFFF;
+
 
   &--main {
     border-radius: 40px;
@@ -18,7 +22,7 @@
     padding: 22px 80px;
   }
 
-  &__large {
+  &--large {
     font-size: 1.6rem;
     line-height: 2.2rem;
     border-radius: 40px;

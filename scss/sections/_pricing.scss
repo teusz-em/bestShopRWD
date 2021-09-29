@@ -1,0 +1,330 @@
+.pricing {
+  background-color: $background-secondary-color;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+
+  }
+
+  &__header {
+    @include raleway(400);
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    text-align: center;
+    padding: 53px 0 14px;
+  }
+
+  &__plans {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid $accent-reddish-color;
+    border-radius: 18px;
+    position: relative;
+    margin-bottom: 54px;
+
+    &--professional {
+      border-color: $primary-color;
+      padding: 25px 20px 0 20px;
+      box-sizing: content-box;
+    }
+
+    &--premium {
+      border-color: $accent-green-color;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--professional {
+      margin-right: 15px;
+    }
+  }
+
+  &__type {
+    @include raleway(800);
+    font-size: 2rem;
+    line-height: 2.1rem;
+    text-align: center;
+    //padding-top: 70px;
+  }
+
+  &__price {
+    @include opensans(300);
+    font-size: 4.6rem;
+    line-height: 6rem;
+    text-align: center;
+    color: $accent-reddish-color;
+    //padding-bottom: 90px;
+
+    &--professional {
+      color: $primary-color;
+    }
+
+    &--premium {
+      color: $accent-green-color;
+    }
+  }
+
+  &__text {
+    @include raleway(800);
+    font-size: 12px;
+    text-align: center;
+  }
+
+
+
+  &__list {
+    @include opensans(400);
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+  }
+
+  &__item {
+    padding-bottom: 20px;
+
+    &::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      background-image: url("/assets/Ckechmark-1ok.svg");
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    &--not::before{
+      content: "";
+      width: 11px;
+      height: 11px;
+      background-image: url("/assets/Close.svg");
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+
+.btn {
+  &--basic {
+    position: absolute;
+    bottom: -25px;
+  }
+
+  &--professional {
+    position: absolute;
+    bottom: -25px;
+    background-color: $primary-color;
+  }
+
+  &--premium {
+    position: absolute;
+    bottom: -25px;
+    background-color: $accent-green-color;
+  }
+}
+
+
+
+
+
+//}
+//
+//.pricing__general {
+//  width: 372px;
+//  border-radius: 18px;
+//  display: flex;
+//  flex-direction: column;
+//  align-items: center;
+//  border: 1px solid var(--color-redish);
+//  padding-bottom: 155px;
+//}
+//
+//.pricing__header {
+//  padding: 100px 0 50px 0;
+//  font-family: var(--font-ral);
+//  font-size: 36px;
+//  font-weight: var(--font-reg);
+//  line-height: 42px;
+//  color: var(--color-black);
+//  text-align: center;
+//}
+//
+//.pricing__basic__header {
+//  font-family: var(--font-ral);
+//  font-weight: var(--font-bold);
+//  font-size: 20px;
+//}
+//
+//.pricing__basic{
+//  position: relative;
+//}
+//
+//.pricing__info {
+//  padding-top: 40px;
+//  padding-bottom: 69px;
+//}
+//
+//.pricing__price1 {
+//  font-family: var(--font-open);
+//  font-size: 46px;
+//  font-weight: var(--font_light);
+//  color: var(--color-redish);
+//  padding-top: 20px;
+//}
+//
+//.pricing__list {
+//  font-family: var(--font-open);
+//  font-weight: var(--font-reg);
+//  line-height: 41px;
+//  padding-bottom: 81px;
+//  text-align: center;
+//  color: var(--color-black);
+//
+//}
+//
+//.pricing__btn {
+//  background-color: var(--color-redish);
+//  padding: 14px 75px;
+//  font-family: var(--font-open);
+//  font-weight: var(--font-bold);
+//  line-height: 41px;
+//  position: absolute;
+//  bottom: -36px;
+//
+//}
+//
+//.pricing__professional__header {
+//  font-family: var(--font-ral);
+//  font-weight: var(--font-bold);
+//  font-size: 21px;
+//}
+//
+//
+//.pricing__professional {
+//  width: 405px;
+//  position: relative;
+//  border: 1px solid var(--color-primary);
+//  margin-bottom: -20px;
+//  margin-top: -20px;
+//  box-shadow: var(--color-primary-shadow) 5px 10px 27px;
+//}
+//
+//.pricing__info2{
+//  padding-top: 40px;
+//  padding-bottom: 57px;
+//
+//}
+//.pricing__price2 {
+//  font-family: var(--font-open);
+//  font-size: 46px;
+//  font-weight: var(--font_light);
+//  color: var(--color-primary);
+//  padding-top: 20px;
+//  text-align: center;
+//}
+//
+//.pricing__text2 {
+//  font-size: 12px;
+//  font-family: var(--font-ral);
+//  font-weight: var(--font-bold);
+//  padding-top: 20px;
+//  text-align: center;
+//}
+//
+//.pricing__list2 {
+//  font-family: var(--font-open);
+//  font-weight: var(--font-reg);
+//  line-height: 41px;
+//  padding-bottom: 81px;
+//  text-align: center;
+//  color: var(--color-black);
+//
+//}
+//
+//.pricing__btn2 {
+//  background-color: var(--color-primary);
+//  padding: 16px 85px;
+//  font-family: var(--font-open);
+//  font-weight: var(--font-bold);
+//  line-height: 41px;
+//  position: absolute;
+//  bottom: -36px;
+//  box-shadow: var(--color-primary-shadow) 5px 10px 27px;
+//
+//}
+//
+//.pricing__premium__header {
+//  font-family: var(--font-ral);
+//  font-weight: var(--font-bold);
+//  font-size: 20px;
+//}
+//
+//.pricing__premium {
+//  position: relative;
+//  border: 1px solid var(--color-green);
+//}
+//
+//.pricing__info3 {
+//  padding-top: 40px;
+//  padding-bottom: 47px;
+//}
+//
+//.pricing__price3 {
+//  font-family: var(--font-open);
+//  font-size: 46px;
+//  font-weight: var(--font_light);
+//  color: var(--color-green);
+//  padding-top: 20px;
+//  text-align: center;
+//}
+//
+//.pricing__text3 {
+//  font-size: 12px;
+//  font-family: var(--font-ral);
+//  font-weight: var(--font-bold);
+//  padding-top: 20px;
+//  text-align: center;
+//}
+//
+//.pricing__list3 {
+//  font-family: var(--font-open);
+//  font-weight: var(--font-reg);
+//  line-height: 41px;
+//  padding-bottom: 81px;
+//  text-align: center;
+//  color: var(--color-black);
+//}
+//
+//.pricing__btn3 {
+//  background-color: var(--color-green);
+//  padding: 14px 75px;
+//  font-family: var(--font-open);
+//  font-weight: var(--font-bold);
+//  line-height: 41px;
+//  position: absolute;
+//  bottom: -36px;
+//}
+//.pricing__list__item::before{
+//  content: "";
+//  width: 11px;
+//  height: 11px;
+//  display: inline-block;
+//  margin-right: 10px;
+//  background-image: url("../assets/Ckechmark-1.svg");
+//}
+//
+//.pricing__list__item--not::before {
+//  content: "";
+//  width: 11px;
+//  height: 11px;
+//  display: inline-block;
+//  margin-right: 10px;
+//  background-image: url("../assets/Close.svg");
+//}
