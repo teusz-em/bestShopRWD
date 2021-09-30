@@ -30,9 +30,15 @@
     box-shadow: #07ACE629 5px 10px 14px;
   }
 
-  &__submit {
+  &--submit {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     padding: 20px 97px;
     box-shadow: #07ACE629 5px 10px 14px;
+    border-radius: 35px;
+    background-color: $primary-color;
+    border-style: none;
+    align-self: flex-end;
   }
 }
 

@@ -1,0 +1,130 @@
+.form {
+  background-color: $background-secondary-color;
+  width: 100%;
+
+  &__wrapper {
+    margin: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__heading {
+    @include raleway(400);
+    font-size: 4rem;
+    line-height: 4.7rem;
+    padding-bottom: 5px;
+  }
+
+  &__text {
+    @include opensans(400);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding-bottom: 30px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  &__email, &__phone {
+    @include opensans(400);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    display: block;
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: $font-secondary-color;
+  }
+
+  &__email::before {
+    content: '';
+    height: 22px;
+    width: 22px;
+    background-image: url("/assets/Mail Icon.svg");
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -5px;
+
+  }
+
+  &__phone::before {
+    content: '';
+    height: 22px;
+    width: 22px;
+    background-image: url("/assets/Phone Icon.svg");
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -5px;
+  }
+
+  &__label {
+    @include opensans(800);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 3.3px;
+    padding-bottom: 20px;
+    padding-top: 35px;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__type {
+    border-style: none;
+    border-bottom: $font-secondary-color solid 1px;
+    width: 100%;
+  }
+
+  &__consent {
+    margin-top: 31px;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox {
+    position: relative;
+
+
+    input {
+      position: absolute;
+      display: none;
+      opacity: 0;
+
+      &:checked ~ .checkbox{
+        background-image: url("/assets/Checkmark.svg");
+        background-position: center;
+        background-size: 50%;
+        background-repeat: no-repeat;
+    }
+    }
+  }
+
+  &__declaration {
+    padding-left: 35px;
+    color: $font-secondary-color;
+    @include opensans(400);
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.checkbox {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: $background-secondary-color;
+    border: 1px solid $font-secondary-color;
+    border-radius: 4px;
+  }
+
