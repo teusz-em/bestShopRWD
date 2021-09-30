@@ -1,0 +1,29 @@
+.footer {
+  height: 90px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 40px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__copyright {
+    @include opensans(400);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    color: $font-secondary-color;
+    padding-top: 3px;
+  }
+
+  &__media {
+    a {
+      margin-right: 15px;
+    }
+  }
+
+}

@@ -528,6 +528,9 @@ body {
   height: 70px;
 }
 
+.welcome {
+  background-color: #FFFFFF;
+}
 .welcome__wrapper {
   position: relative;
   background-color: #FFFFFF;
@@ -1034,7 +1037,8 @@ body {
   width: 100%;
 }
 .form__wrapper {
-  margin: 30px 25px;
+  margin: 0 25px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1146,5 +1150,30 @@ body {
   background-color: #FFFFFF;
   border: 1px solid #A5A5A5;
   border-radius: 4px;
+}
+
+.footer {
+  height: 90px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 -5px 40px;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #A5A5A5;
+  padding-top: 3px;
+}
+.footer__media a {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=main.css.map */
